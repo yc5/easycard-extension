@@ -1,0 +1,14 @@
+{
+  "name": "悠遊卡網站優化",
+  "version": "0.0.1",
+  "description": "提升悠遊卡歷史交易查詢網站使用者體驗",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://ezweb.easycard.com.tw/search/CardSearch.php"],
+      "js": ["contentscript.js"],
+      "css": ["background.css"]
+    }
+  ],
+  "permissions": ["tabs", "storage"]
+}
